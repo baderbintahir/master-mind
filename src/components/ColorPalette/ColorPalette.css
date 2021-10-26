@@ -1,0 +1,29 @@
+.color-palette{
+    width: fit-content;
+    float: right;
+}
+
+.zero input[type="radio"] + label {
+    background: #FFB400;
+}
+
+.one input[type="radio"] + label {
+    background: #FF5A5F;
+}
+
+.two input[type="radio"] + label {
+    background: #8CE071;
+}
+
+.three input[type="radio"] + label {
+    background: #00D1C1;
+}
+
+.four input[type="radio"] + label {
+    background: #007A87;
+}
+
+.five input[type="radio"] + label {
+    background: #7B0051;
+}
+

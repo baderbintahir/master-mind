@@ -1,0 +1,34 @@
+h1 span {
+    color: white;
+    padding: 0 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.6rem;
+}
+
+.M{
+    background: #ffb400;
+}
+
+.A{
+    background: #FF5A5F;
+}
+
+.S{
+    background: #8CE071;
+}
+
+.T{
+    background: #00D1C1;
+}
+
+.E{
+    background: #007A87;
+}
+
+.R{
+    background: #7B0051;
+}
+
+.MIND{
+    color: #333333;
+}
