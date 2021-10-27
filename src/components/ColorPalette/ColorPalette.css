@@ -3,27 +3,27 @@
     float: right;
 }
 
-.zero input[type="radio"] + label {
+.palette-0 input[type="radio"] + label {
     background: #FFB400;
 }
 
-.one input[type="radio"] + label {
+.palette-1 input[type="radio"] + label {
     background: #FF5A5F;
 }
 
-.two input[type="radio"] + label {
+.palette-2 input[type="radio"] + label {
     background: #8CE071;
 }
 
-.three input[type="radio"] + label {
+.palette-3 input[type="radio"] + label {
     background: #00D1C1;
 }
 
-.four input[type="radio"] + label {
+.palette-4 input[type="radio"] + label {
     background: #007A87;
 }
 
-.five input[type="radio"] + label {
+.palette-5 input[type="radio"] + label {
     background: #7B0051;
 }
 

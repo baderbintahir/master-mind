@@ -1,19 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ColorCircle from '../../ColorCircle/ColorCircle'
 
 import './Row.css'
 
 function Row(props) {
+    let startingId = props.rowNumber * 100
+
+    const [clicked, setClicked] = useState([-1, -1, -1, -1])
+    const handleClick = e => {
+        let x = [].concat(clicked)
+        x[e.target.id.slice(-3) - startingId] = props.selectedColor
+        setClicked(x)
+    }
+
+    let circles = []
+    for (let i = startingId; i < startingId + 4; i++) {
+        circles.push(<ColorCircle id={`c-${i}`} key={i} class={clicked[i - startingId]} handleClick={handleClick} />)        
+    }
+
     return (
-        <div className={`row ${props.class}`}>
+        <div className={`row`}>
             <div className="circles">
-                <ColorCircle id={"one"}/>
-                <ColorCircle id={"two"}/>
-                <ColorCircle id={"three"}/>
-                <ColorCircle id={"four"}/>
+                {circles}
             </div>
 
-            <button className={`submit`}></button>
+            <button className={`submit ${!clicked.includes(-1) ? 'display' : null}`}></button>
 
             <div className="hints">
                 <span className="hint"></span>
