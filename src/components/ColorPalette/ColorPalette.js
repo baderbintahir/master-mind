@@ -2,15 +2,15 @@ import React from 'react'
 import ColorCircle from '../ColorCircle/ColorCircle'
 import './ColorPalette.css'
 
-function ColorPalette() {
+function ColorPalette(props) {
+    let palettes = []
+    for (let i = 0; i < 6; i++) {
+        palettes.push(<ColorCircle key={i} class={`${i} ${i === Number(props.selectedColor) ? 'selected' : null}`} handleClick={props.handleClick} id={`p-${i}`}/>)
+    }
+
     return (
         <div className='color-palette'>
-            <ColorCircle className="zero selected"/>
-            <ColorCircle className="one"/>
-            <ColorCircle className="two"/>
-            <ColorCircle className="three"/>
-            <ColorCircle className="four"/>
-            <ColorCircle className="five"/>
+            {palettes}
         </div>
     )
 }

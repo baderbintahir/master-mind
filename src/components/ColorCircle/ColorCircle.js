@@ -4,8 +4,12 @@ import './ColorCircle.css'
 function ColorCircle(props) {
     return (
         <div className="color-circle">
-            <span className={props.className ? props.className : ''}>
-                <input type='radio' id={props.id}/>
+            <span className={`palette-${props.class}`}>
+                <input
+                    type='radio'
+                    id={props.id}
+                    onClick={props.handleClick}
+                />
                 <label htmlFor={props.id}></label>
             </span>
         </div>
