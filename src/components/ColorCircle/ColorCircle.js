@@ -9,6 +9,7 @@ function ColorCircle(props) {
                     type='radio'
                     id={props.id}
                     onClick={props.handleClick}
+                    disabled={!props.selectedRow && props.id[0] !== "p"}
                 />
                 <label htmlFor={props.id}></label>
             </span>

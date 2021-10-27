@@ -5,7 +5,7 @@ import './Row.css'
 
 function Row(props) {
     let startingId = props.rowNumber * 100
-
+    let selectedRow = props.rowNumber === props.selectedRow
     const [clicked, setClicked] = useState([-1, -1, -1, -1])
     const handleClick = e => {
         let x = [].concat(clicked)
@@ -15,16 +15,19 @@ function Row(props) {
 
     let circles = []
     for (let i = startingId; i < startingId + 4; i++) {
-        circles.push(<ColorCircle id={`c-${i}`} key={i} class={clicked[i - startingId]} handleClick={handleClick} />)        
+        circles.push(<ColorCircle id={`c-${i}`} key={i} class={clicked[i - startingId]} selectedRow={selectedRow} handleClick={handleClick} />)
     }
 
     return (
-        <div className={`row`}>
+        <div className={`row ${selectedRow ? 'selected-row' : null}`}>
             <div className="circles">
                 {circles}
             </div>
 
-            <button className={`submit ${!clicked.includes(-1) ? 'display' : null}`}></button>
+            <button
+                className={`submit ${!clicked.includes(-1) ? 'display' : null}`}
+                onClick={props.handleSubmit}
+            ></button>
 
             <div className="hints">
                 <span className="hint"></span>
