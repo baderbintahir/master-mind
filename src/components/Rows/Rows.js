@@ -6,8 +6,21 @@ import './Rows.css'
 function Rows(props) {
     const [selectedRow, setSelectedRow] = useState(1)
     
-    const handleSubmit = () => {
+    const handleSubmit = (selectionArr) => {
+        let winningPattern = ['1', '3', '5', '0']
+        let win = true
         setSelectedRow(selectedRow + 1)
+
+        for (let i = 0; i < selectionArr.length; i++) {
+            if(selectionArr[i] !== winningPattern[i]){
+                win = false
+            }            
+        }
+         
+        if(win){
+            alert("You won!!!")
+            setSelectedRow(0)
+        }
     }
 
     let rows = []

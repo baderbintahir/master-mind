@@ -6,6 +6,7 @@ import './Row.css'
 function Row(props) {
     let startingId = props.rowNumber * 100
     let selectedRow = props.rowNumber === props.selectedRow
+    
     const [clicked, setClicked] = useState([-1, -1, -1, -1])
     const handleClick = e => {
         let x = [].concat(clicked)
@@ -26,7 +27,8 @@ function Row(props) {
 
             <button
                 className={`submit ${!clicked.includes(-1) ? 'display' : null}`}
-                onClick={props.handleSubmit}
+                onClick={() => props.handleSubmit(clicked)}
+                disabled={!selectedRow}
             ></button>
 
             <div className="hints">
