@@ -1,4 +1,4 @@
-.selected-row{
+.selected-row {
     border: 1px solid #a8a8a8;
 }
 
@@ -57,4 +57,30 @@
     margin-right: 10px;
     border: 1px solid #28222D;
     border-radius: 50%;
+}
+
+.hint-exact {
+    background: #555461;
+}
+
+.hint-right {
+    background: #fff;
+}
+
+.hint-wrong:before {
+    transform: rotate( 45deg);
+}
+
+.hint-wrong:after {
+    transform: rotate( -45deg);
+}
+
+.hint-wrong:before, .hint-wrong:after {
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    content: ' ';
+    height: 8px;
+    width: 2px;
+    background-color: #333;
 }
