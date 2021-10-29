@@ -1,29 +1,28 @@
-.color-palette{
-    width: fit-content;
-    float: right;
+.color-palette {
+  width: fit-content;
+  float: right;
 }
 
 .palette-0 input[type="radio"] + label {
-    background: #FFB400;
+  background: #ffb400;
 }
 
 .palette-1 input[type="radio"] + label {
-    background: #FF5A5F;
+  background: #ff5a5f;
 }
 
 .palette-2 input[type="radio"] + label {
-    background: #8CE071;
+  background: #8ce071;
 }
 
 .palette-3 input[type="radio"] + label {
-    background: #00D1C1;
+  background: #00d1c1;
 }
 
 .palette-4 input[type="radio"] + label {
-    background: #007A87;
+  background: #007a87;
 }
 
 .palette-5 input[type="radio"] + label {
-    background: #7B0051;
+  background: #7b0051;
 }
-

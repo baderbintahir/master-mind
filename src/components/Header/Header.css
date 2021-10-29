@@ -1,32 +1,33 @@
 h1 span {
-    color: white;
-    padding: 0 5px;font-size: 2.6rem;
+  color: white;
+  padding: 0 5px;
+  font-size: 2.6rem;
 }
 
-.M{
-    background: #ffb400;
+.M {
+  background: #ffb400;
 }
 
-.A{
-    background: #FF5A5F;
+.A {
+  background: #ff5a5f;
 }
 
-.S{
-    background: #8CE071;
+.S {
+  background: #8ce071;
 }
 
-.T{
-    background: #00D1C1;
+.T {
+  background: #00d1c1;
 }
 
-.E{
-    background: #007A87;
+.E {
+  background: #007a87;
 }
 
-.R{
-    background: #7B0051;
+.R {
+  background: #7b0051;
 }
 
-.MIND{
-    color: #333333;
+.MIND {
+  color: #333333;
 }

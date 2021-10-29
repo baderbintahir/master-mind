@@ -1,19 +1,19 @@
-.rules{
-    text-align: start;
-    margin: 1rem 0;
+.rules {
+  text-align: start;
+  margin: 1rem 0;
 }
 
-.rules-btn{
-    font-size: 1.5rem;
-    cursor: pointer;
+.rules-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.rules-desc{
-    border: #EAEBE9 1px solid;
-    padding: 2%;
-    display: none;
+.rules-desc {
+  border: #eaebe9 1px solid;
+  padding: 2%;
+  display: none;
 }
 
-.display{
-    display: block;
+.display {
+  display: block;
 }

@@ -1,86 +1,87 @@
 .selected-row {
-    border: 1px solid #a8a8a8;
+  border: 1px solid #a8a8a8;
 }
 
 .row {
-    display: flex;
-    width: fit-content;
-    margin: auto;
-    padding: 1rem;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
 }
 
 .circles {
-    display: flex;
+  display: flex;
 }
 
 .submit {
-    width: 20px;
-    height: 5px;
-    position: relative;
-    margin: 15px 7px;
-    border: none;
-    cursor: pointer;
-    background-color: #F4F4F4;
-    display: none;
+  width: 20px;
+  height: 5px;
+  position: relative;
+  margin: 15px 7px;
+  border: none;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  display: none;
 }
 
 .submit:before {
-    left: 6px;
-    width: 5px;
-    height: 12px;
-    border-width: 0 5px 5px 0;
-    top: 50%;
-    border-style: solid;
-    border-color: #B4BB69;
-    margin-top: -11px;
-    transform: rotate( 45deg);
-    content: "";
-    position: absolute;
+  left: 6px;
+  width: 5px;
+  height: 12px;
+  border-width: 0 5px 5px 0;
+  top: 50%;
+  border-style: solid;
+  border-color: #b4bb69;
+  margin-top: -11px;
+  transform: rotate(45deg);
+  content: "";
+  position: absolute;
 }
 
 .submit:after {
-    content: "";
-    position: absolute;
-    top: 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
 }
 
 .hints {
-    width: 44px;
-    margin-left: 1rem;
+  width: 44px;
+  margin-left: 1rem;
 }
 
 .hint {
-    display: inline-block;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
-    border: 1px solid #28222D;
-    border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border: 1px solid #28222d;
+  border-radius: 50%;
 }
 
 .hint-exact {
-    background: #555461;
+  background: #555461;
 }
 
 .hint-right {
-    background: #fff;
+  background: #fff;
 }
 
 .hint-wrong:before {
-    transform: rotate( 45deg);
+  transform: rotate(45deg);
 }
 
 .hint-wrong:after {
-    transform: rotate( -45deg);
+  transform: rotate(-45deg);
 }
 
-.hint-wrong:before, .hint-wrong:after {
-    position: absolute;
-    left: 4px;
-    top: 1px;
-    content: ' ';
-    height: 8px;
-    width: 2px;
-    background-color: #333;
+.hint-wrong:before,
+.hint-wrong:after {
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  content: " ";
+  height: 8px;
+  width: 2px;
+  background-color: #333;
 }
