@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Rules from "./components/Rules/Rules";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <Header />

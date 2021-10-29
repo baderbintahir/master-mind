@@ -1,7 +1,7 @@
 import React from "react";
 import "./ColorCircle.css";
 
-function ColorCircle(props) {
+const ColorCircle = (props) => {
   return (
     <div className="color-circle">
       <span className={`palette-${props.class}`}>
